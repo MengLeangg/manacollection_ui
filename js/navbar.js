@@ -108,9 +108,9 @@ $(document).ready(function() {
             carouselOverlayScroll = OverlayScrollbars($('.sp-product-scroll'), { });
         }
         else if (carouselOverlayScroll !== undefined) {
-            var carouselOverlayScrollArrayLength = carouselOverlayScroll.length;
+            let carouselOverlayScrollArrayLength = carouselOverlayScroll.length;
             if (carouselOverlayScrollArrayLength !== undefined){ // if multiple instances
-                for (var i = 0; i < carouselOverlayScrollArrayLength; i++) {
+                for (let i = 0; i < carouselOverlayScrollArrayLength; i++) {
                     if (OverlayScrollbars.valid(carouselOverlayScroll[i])) {
                         carouselOverlayScroll[i].destroy();
                     }
@@ -240,9 +240,9 @@ $(document).ready(function() {
     });
 
     $('header').on('click', '.header.mobile .sub-nav ul#sitenav li span.mdrop-sub', function() {
-        var mDrop = $(this).parent();
-        var mDropUl = $('ul#sitenav');
-        var mobileAccount = $('.header.mobile .my-account-mobile');
+        let mDrop = $(this).parent();
+        let mDropUl = $('ul#sitenav');
+        let mobileAccount = $('.header.mobile .my-account-mobile');
         mDrop.addClass('active');
         if (mDropUl.hasClass('first-level')) {
             mobileAccount.fadeOut(100);
@@ -250,8 +250,8 @@ $(document).ready(function() {
                 mDrop.addClass('activenow');
                 mDropUl.removeClass('first-level');
                 mDropUl.addClass('second-level');
-                var smcCount = mDrop.find('ul.second-mchild>li').length;
-                var smcTime = smcCount * 30;
+                let smcCount = mDrop.find('ul.second-mchild>li').length;
+                let smcTime = smcCount * 30;
                 mDropUl.animate({'opacity':'1'}, 100, function() {
                     mDrop.find('ul.second-mchild').slideDown(smcTime, function() {
                         mobileAccount.fadeIn('fast');
@@ -264,8 +264,8 @@ $(document).ready(function() {
             mDropUl.animate({'opacity':'0'}, 100, function() {
                 mDrop.addClass('activenow');
                 mDropUl.addClass('first-level');
-                var smcCount = mDrop.find('ul.mini-nav.mobile>li').length;
-                var smcTime = smcCount * 30;
+                let smcCount = mDrop.find('ul.mini-nav.mobile>li').length;
+                let smcTime = smcCount * 30;
                 mDropUl.animate({'opacity':'1'}, 100, function() {
                     mDrop.find('ul.mini-nav.mobile').slideDown(smcTime, function() {
                         mobileAccount.fadeIn('fast');
@@ -275,8 +275,8 @@ $(document).ready(function() {
         }
     });
     $('header').on('click', '.header.mobile .sub-nav ul#sitenav div.back', function() {
-        var mDropUl = $('ul#sitenav');
-        var mDrop = $(this).closest('li');
+        let mDropUl = $('ul#sitenav');
+        let mDrop = $(this).closest('li');
         if (mDropUl.hasClass('first-level')) {
             mDropUl.animate({'opacity':'0'}, 100, function() {
                 mDrop.find('ul.mini-nav.mobile').hide();
@@ -294,8 +294,8 @@ $(document).ready(function() {
                 $('.header.mobile .sub-nav ul#sitenav li.active li.active').removeClass('active');
                 mDropUl.removeClass('second-level');
                 mDropUl.addClass('first-level');
-                var smcCount = mDrop.closest('ul.mini-nav.mobile>li').length;
-                var smcTime = smcCount * 30;
+                let smcCount = mDrop.closest('ul.mini-nav.mobile>li').length;
+                let smcTime = smcCount * 30;
                 mDropUl.animate({'opacity':'1'}, 100, function() {
                     mDrop.closest('ul.mini-nav.mobile').slideDown(smcTime);
                 });
@@ -412,43 +412,43 @@ $(document).ready(function() {
     });
 
     function fullLoaderHeight() {
-        var fslCS = $(window).scrollTop();
+        let fslCS = $(window).scrollTop();
         if (isMobileNav) {
             if (fslCS == 0) {
-                var fslTop = 94;
+                let fslTop = 94;
             }
             else if (fslCS > 0 && fslCS < 40) {
-                var fslTop = 94 - fslCS;
+                let fslTop = 94 - fslCS;
             }
             else {
-                var fslTop = 54;
+                let fslTop = 54;
             }
         }
         else {
             if ($('body').hasClass('checkout-body')) {
                 if (fslCS == 0) {
-                    var fslTop = 60;
+                    let fslTop = 60;
                 }
                 else if (fslCS > 0 && fslCS < 60) {
-                    var fslTop = 60 - fslCS;
+                    let fslTop = 60 - fslCS;
                 }
                 else {
-                    var fslTop = 0;
+                    let fslTop = 0;
                 }
             }
             else {
                 if (fslCS == 0) {
-                    var fslTop = 151;
+                    let fslTop = 151;
                 }
                 else if (fslCS > 0 && fslCS < 151) {
-                    var fslTop = 151 - fslCS;
+                    let fslTop = 151 - fslCS;
                 }
                 else {
-                    var fslTop = 0;
+                    let fslTop = 0;
                 }
             }
         }
-        var isFullMobile = $('section.isfullmobile-identifier').css('display') != 'none';
+        let isFullMobile = $('section.isfullmobile-identifier').css('display') != 'none';
         if (isFullMobile) {
             $('#notification').css('margin-top', fslTop+'px');
         }
@@ -460,30 +460,30 @@ $(document).ready(function() {
 
     // -- Suggested Items -- //
     $('.suggested-products .sp-arrows .arrow-wrap').on('click', function() {
-        var spParentDiv = $(this).closest('.suggested-products');
-        var spScrollDiv = spParentDiv.find('.sp-ps-inner');
-        var spscWidth = spScrollDiv.width();
-        var checkPosition = spScrollDiv.css('right');
-        var noPX = checkPosition.replace('px', '');
-        var oldPosition = parseFloat(noPX);
-        var rightOrLeft = $(this);
+        let spParentDiv = $(this).closest('.suggested-products');
+        let spScrollDiv = spParentDiv.find('.sp-ps-inner');
+        let spscWidth = spScrollDiv.width();
+        let checkPosition = spScrollDiv.css('right');
+        let noPX = checkPosition.replace('px', '');
+        let oldPosition = parseFloat(noPX);
+        let rightOrLeft = $(this);
         spParentDiv.find('.sp-product').addClass('visible');
         if (rightOrLeft.hasClass('right')) {
             spParentDiv.find('.left').removeClass('disabled');
-            var newPosition = oldPosition + spscWidth;
+            let newPosition = oldPosition + spscWidth;
             spParentDiv.find('.sp-arrows .arrow-wrap').css('pointer-events', 'none');
             spScrollDiv.css('right', newPosition + 'px');
-            var checkMaxScrollN = spScrollDiv.children('.sp-product').length;
-            var checkMaxScrollH = spScrollDiv.children('.sp-product').width();
-            var cmsNumber = checkMaxScrollN * checkMaxScrollH;
-            var checkMax = newPosition + spscWidth;
+            let checkMaxScrollN = spScrollDiv.children('.sp-product').length;
+            let checkMaxScrollH = spScrollDiv.children('.sp-product').width();
+            let cmsNumber = checkMaxScrollN * checkMaxScrollH;
+            let checkMax = newPosition + spscWidth;
             if (checkMax >= cmsNumber) {
                 $(this).addClass('disabled');
             }
         }
         else {
             spParentDiv.find('.right').removeClass('disabled');
-            var newPosition = oldPosition - spscWidth;
+            let newPosition = oldPosition - spscWidth;
             spParentDiv.find('.sp-arrows .arrow-wrap').css('pointer-events', 'none');
             spScrollDiv.css('right', newPosition + 'px');
             if (newPosition == 0) {
@@ -495,6 +495,26 @@ $(document).ready(function() {
             clearTimeout(spClickFunc);
         }
         spClickFunc = window.setTimeout(delayClickable, 350);
+    });
+
+    let candidInitiated = 0;
+    $(window).scroll(function() {
+        if (($(window).scrollTop() + windowHeight >= $('#candid-container').offset().top - 400) && (!candidInitiated)) {
+            candidInitiated = 1;
+            candid.init({
+                id: '08225b75-434d-4401-9566-027dde2f63d8',
+                width: 220,
+                frameHeight:245,
+                margin: 10,
+                animationSpeed:1500,
+                count: 15,
+                slideshowSpeed:5000,
+                logo:false,
+                linksHeading:'SHOP THIS LOOK',
+                tag:'show',
+                containerId:'candid-container'
+            });
+        }
     });
         
 })

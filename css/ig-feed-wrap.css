@@ -1,0 +1,33 @@
+.home .ig-feed-wrap {
+    padding: 1px 0 20px 0;
+    margin: 40px 0 0;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+.home .ig-feed-wrap .ig-feed-innerwrap {
+    text-align: center;
+    width: 94%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.home .ig-feed-title {
+    font-size: 24px;
+    margin: 20px 0 4px;
+}
+.home .ig-feed-subtitle {
+    font-size: 18px;
+    width: 90%;
+    margin: 0 auto 20px;
+    cursor: default;
+}
+
+.home a.social-button {
+    color: #fff;
+    padding: 4px 26px;
+    border: 1px solid #fff;
+    font-weight: 600;
+    font-size: 13px;
+    display: table;
+    margin: 5px auto 0;
+}
