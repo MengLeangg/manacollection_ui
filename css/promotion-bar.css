@@ -1,0 +1,196 @@
+.temp-info {
+    display: none;
+}
+.promo-bar {
+    background-color: #fff;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    font-family: 'raleway';
+    font-weight: 500;
+    letter-spacing: 0;
+    overflow: hidden;
+}
+.banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    line-height: 0;
+}
+.banner.multibanner {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+}
+.promo-bar .promo-wrap .banner.multibanner .pagination {
+    display: none !important;
+}
+.banner.multibanner .pagination {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: 18px;
+    right: 20px;
+}
+.banner.multibanner .animated {
+    position: relative;
+    right: 0;
+    -moz-transition: all .65s ease-in-out;
+    -webkit-transition: all .65s ease-in-out;
+    -o-transition: all .65s ease-in-out;
+    transition: all .65s ease-in-out;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.promo-bar .promo-wrap .banner.multibanner .animated .banner-item-anim {
+    width: 100%;
+    font-size: 13px;
+    display: block;
+}
+.banner.multibanner .animated .banner-item-anim {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+}
+.banner.multibanner .banner-item-wrap {
+    position: relative;
+}
+.banner a.banner-link, .banner .banner-item-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99;
+}
+.promo-bar .free-ship {
+    display: block;
+    vertical-align: top;
+    font-weight: 500;
+    cursor: pointer;
+}
+.promo-bar .fixed-width {
+    display: none;
+    height: 40px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    line-height: normal;
+}
+.promo-bar .text-wrap {
+    white-space: normal;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .25px;
+    font-family: 'Open Sans', sans-serif;
+}
+.promo-bar .promo-nav {
+    display: block;
+}
+.promo-bar .simple-text {
+    display: block;
+    vertical-align: top;
+    font-weight: 500;
+}
+.promo-bar .promo-nav .current-sale {
+    text-align: center;
+    height: 40px;
+    vertical-align: top;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.promo-bar .promo-nav .current-sale .sale-text {
+    font-size: 14px;
+    letter-spacing: .25px;
+}
+.promo-bar .promo-nav .current-sale .code-wrapper {
+    margin-left: 20px;
+    display: inline-block;
+    height: 38px;
+    line-height: 12px;
+    vertical-align: top;
+    text-align: left;
+    letter-spacing: .75px;
+    padding-top: 6px;
+    z-index: 100;
+}
+.promo-bar .promo-nav .current-sale .code-wrapper .code button {
+    color: #fff;
+    font-weight: 600;
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    z-index: 200;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+.promo-bar .promo-nav .current-sale .code-wrapper .code {
+    display: block;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+.promo-bar .promo-nav .current-sale .code-wrapper .js-copied {
+    z-index: 99999999;
+    position: absolute;
+    margin-left: 16px;
+    display: inline-block;
+    background: #fff;
+    color: #777;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: lowercase;
+    padding: 9px 28px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+    visibility: hidden;
+    pointer-events: none;
+}
+.promo-bar .promo-nav .current-sale .code-wrapper .js-copied:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(255,255,255,0);
+    border-right-color: #fff;
+    border-width: 8px;
+    margin-top: -8px;
+}
+.promo-bar .promo-nav .current-sale .code-wrapper .details {
+    font-size: 11px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    padding: 0 10px 5px 0;
+    z-index: 999;
+}
+.banner .mobile {
+    display: none;
+}
+
+/* responsive promotion bar */
+@media only screen and (max-width: 768px){
+    .banner .desktop {
+        display: none;
+    }
+    .banner .mobile {
+        display: block;
+    }
+}

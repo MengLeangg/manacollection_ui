@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaNaCollection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/promotion-bar.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/sb-wrapper.css">
+    <link rel="stylesheet" href="css/sb-home-wrap.css">
+    <link rel="stylesheet" href="css/newspaper-banners.css">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.hoverIntent.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.overlayScrollbars.min.js"></script>
+    <script src="js/navbar.js"></script>
+</head>
+<body>
+    <section class="isretina-identifier"></section>
+    <section class="ismobile-identifier"></section>
+    <section class="isfullmobile-identifier"></section>
+    <section class="ismobilenav-identifier"></section>
+    <section class="isfulldesktop-identifier"></section>
+
+    <!-- Promotion bar -->
+    <div class='temp-info'></div>
+    <div class='promo-bar'>
+        <div class='promo-wrap'>
+            <div class='banner multibanner swiper-container' id='banner_6'>
+                <span class='pagination swiper-pagination'></span>
+                    <div class='animated swiper-wrapper'>   
+                    <div class='banner-item-anim swiper-slide' id='banner-item_1'>
+                        <div class='banner-item-wrap'>
+                            <div class='html-banner desktop'>
+                                <div class="promo-nav" style="background: #BA713F;">
+                                    <div class="current-sale fixed-width">
+                                        <div class="sale-text">FALL SALE up to $45 OFF</div>
+                                        <div class="code-wrapper">
+                                            <span class="code">code: 
+                                                <button id="js-linkcopy" class="trigger-copy" data-clipboard-text="FW2020">FW2020</button>
+                                                <div class="js-copied">Copied!</div>
+                                            </span>
+                                            <span class="details">see details <i class="fa fa-chevron-down"></i><i class="fas fa-chevron-up" style="display: none;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='html-banner mobile'>
+                                <div class="promo-nav" style="background: #BA713F;">
+                                    <div class="current-sale fixed-width">
+                                        <div class="sale-text">FALL SALE up to $45 OFF</div>
+                                        <div class="code-wrapper">
+                                            <span class="code">code: 
+                                                <button id="js-linkcopy" class="trigger-copy" data-clipboard-text="FW2020">FW2020</button>
+                                                <div class="js-copied">Copied!</div>
+                                            </span>
+                                            <span class="details">see details <i class="fa fa-chevron-down"></i><i class="fas fa-chevron-up" style="display: none;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='banner-item-anim swiper-slide' id='banner-item_2'>
+                        <div class='banner-item-wrap'>
+                            <div class='link-wrap'>
+                                <a class='banner-link' href='https://www.kooding.com/search?search=covid19&idCategory=' target='_parent'></a>
+                            </div>
+                            <div class='html-banner desktop'>
+                                <div class="simple-text" style="background: #e6b866;">
+                                    <div class="fixed-width">
+                                        <div class="text-wrap"><b>COVID-19</b> Essential Items</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='html-banner mobile'>
+                                <div class="simple-text" style="background: #e6b866;">
+                                    <div class="fixed-width">
+                                        <div class="text-wrap"><b>COVID-19</b> Essential Items</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='banner-item-anim swiper-slide' id='banner-item_3'>
+                        <div class='banner-item-wrap'>
+                            <div class='html-banner desktop'>
+                                <div class="free-ship" style="background: #171717;">
+                                    <div class="fixed-width">
+                                        <div class="text-wrap">Fast & Reliable Shipping & Easy Returns!</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='html-banner mobile'>
+                                <div class="free-ship" style="background: #171717;">
+                                    <div class="fixed-width">
+                                        <div class="text-wrap">Fast & Reliable Shipping & Easy Returns!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="header desktop">
+            <div class="fixed-header">
+                <!-- main heading -->
+                <div class="main-heading fixed-width">
+                    <div class="mobile-nav-trigger">
+                        <span class="nav-toggle">
+                            <span class="nt-lines"></span>
+                        </span>
+                    </div>
+                    <div class="logo">
+                        <a href="javascript:void(0)">
+                            <img src="https://www.kooding.com/images/logo_files/logo-nav-retina.png">
+                        </a>
+                    </div>
+                    <div class="search desktop">
+                        <i id="sendsearch" class="fa fa-search"></i>
+                        <form action="" class="searchform">
+                            <input type="hidden" id="search-category-id" class="idCategory">
+                            <span class="clearsearch">
+                                <div class="global-x" id="close-search-desktop">
+                                    <div class="line one"></div>
+                                    <div class="line two"></div>
+                                </div>
+                            </span>
+                            <input type="text" id="mainsearch" name="search" class="search mainsearch" placeholder="Search" autocomplete="off">
+                        </form>
+                    </div>
+                    <div class="header-fill"></div>
+                    <div class="user-options">
+                        <div class="profile" id="signin">
+                            <a class="header-signin gp-open">Sign In / Register</a>
+                        </div>
+                        <div class="search mobile">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="flag-wrap gp-open">
+                            <div class="selected-flag">
+                                <div class="flag-icon-background flag-icon-kh"></div>
+                            </div>
+                        </div>
+                        <div class="favorites-wrap">
+                            <a>
+                                <i id="favorites" class="fa fa-heart"></i>
+                            </a>
+                            <span class="favorites-count">
+                                <p>5</p>
+                            </span>
+                        </div>
+                        <div class="cart">
+                            <a>
+                                <i id="cart-link" class="fa fa-shopping-bag"></i>
+                            </a>
+                            <span class="item-count">
+                                <p>2</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>  
+                <!-- navbar -->
+                <div class="sub-nav fixed-width">
+                    <div class="sitenav-wrap">
+                        <ul id="sitenav" class="">
+                            <li class="allnav manual">
+                                <a href="javascript:void(0)" class="no-children">#COVID19_ESSENTIALS</a>
+                            </li>
+                            <li class="allnav">
+                                <span class="mdrop-sub"></span>
+                                <i class="mobile-drop-icon fa fa-chevron-right"></i>
+                                <a href="javascript:void(0)">Women</a>
+                                <div class="dropped">
+                                    <div class="drop-wrap">
+                                        <div class="fixed-width">
+                                            <div class="left">
+                                                <div class="back one">
+                                                    <i class="fa fa-chevron-left"></i>
+                                                    <span class="text">Women</span>
+                                                </div>
+                                                <ul class="mini-nav mobile">
+                                                    <li>
+                                                        <a href="#" class="no-children">All Women</a>
+                                                    </li>
+                                                    <li class="">
+                                                        <span class="mdrop-sub"></span>
+                                                        <i class="mobile-drop-icon fa fa-chevron-right"></i>
+                                                        <a href="javascript:void(0)">Clothing</a>
+                                                        <div class="back two">
+                                                            <i class="fa fa-chevron-left"></i>
+                                                            <span class="text">Women <span class="slash">/</span>Clothing</span>
+                                                        </div>
+                                                        <ul class="second-mchild">
+                                                            <li><a href='/women-clothing/c/84'>All Clothing</a></li>
+                                                            <li class=''><a href='/women-clothing-dresses/c/9'>Dresses</a>
+                                                            <li class=''><a href='/women-clothing-tops/c/13'>Tops</a>
+                                                            <li class=''><a href='/women-clothing-sweatshirts-and-hoodies/c/344'>Sweatshirts & Hoodies</a>
+                                                            <li class=''><a href='/women-clothing-shirts-blouses/c/12'>Shirts & Blouses</a>
+                                                            <li class=''><a href='/women-clothing-modern-hanbok/c/577'>Modern Hanbok</a>
+                                                            <li class=''><a href='/women-clothing-sweaters/c/11'>Sweaters</a>
+                                                            <li class=''><a href='/women-clothing-outerwear/c/10'>Outerwear</a>
+                                                            <li class=''><a href='/women-clothing-skirts/c/15'>Skirts</a>
+                                                            <li class=''><a href='/women-clothing-pants/c/14'>Pants</a>
+                                                            <li class=''><a href='/women-clothing-jeans/c/30'>Jeans</a>
+                                                            <li class=''><a href='/women-clothing-shorts/c/31'>Shorts</a>
+                                                            <li class=''><a href='/women-clothing-swimwear/c/25'>Swimwear</a>
+                                                            <li class=''><a href='/women-clothing-sleepwear/c/193'>Sleepwear</a>
+                                                            <li class=''><a href='/women-clothing-activewear/c/194'>Activewear</a>
+                                                            <li class=''><a href='/women-clothing-yogawear/c/752'>Yogawear</a>
+                                                            <li class=''><a href='/women-clothing-golfwear/c/817'>Golfwear</a>
+                                                            <li class=''><a href='/women-clothing-innerwear/c/195'>Innerwear</a>
+                                                            <li class=''><a href='/women-clothing-leggings/c/42'>Leggings</a>
+                                                            <li class=''><a href='/women-clothing-plus-sizes/c/548'>Plus Sizes</a>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''>
+                                                        <span class='mdrop-sub'></span>
+                                                        <i class='mobile-drop-icon fa fa-chevron-right'></i>
+                                                        <a href='/women-accessories/c/92'>Accessories</a>
+                                                        <div class='back two'>
+                                                            <i class='fa fa-chevron-left'></i>
+                                                            <span class='text'>Women <span class='slash'>/</span> Accessories</span>
+                                                        </div>
+                                                        <ul class='second-mchild'>
+                                                            <li><a href='/women-accessories/c/92'>All Accessories</a></li>
+                                                            <li class=''><a href='/women-accessories-masks/c/883'>Masks</a>
+                                                            <li class=''><a href='/women-accessories-jewelry/c/21'>Jewelry</a>
+                                                            <li class=''><a href='/women-accessories-hair-accessories/c/109'>Hair Accessories</a>
+                                                            <li class=''><a href='/women-accessories-sunglasses/c/20'>Sunglasses</a>
+                                                            <li class=''><a href='/women-accessories-korean-traditional-accessories/c/1010'>Korean Traditional Accessories</a>
+                                                            <li class=''><a href='/women-accessories-glasses/c/207'>Glasses</a>
+                                                            <li class=''><a href='/women-accessories-hats/c/22'>Hats</a>
+                                                            <li class=''><a href='/women-accessories-neck-gaiters-bandana-masks/c/1001'>Neck Gaiters & Bandana Masks</a>
+                                                            <li class=''><a href='/women-accessories-scarves-mufflers/c/61'>Scarves & Mufflers</a>
+                                                            <li class=''><a href='/women-accessories-socks-stockings/c/830'>Socks & Stockings</a>
+                                                            <li class=''><a href='/women-accessories-watches/c/23'>Watches</a>
+                                                            <li class=''><a href='/women-accessories-belts/c/299'>Belts</a>
+                                                            <li class=''><a href='/women-accessories-gloves/c/300'>Gloves</a>
+                                                            <li class=''><a href='/women-accessories-others/c/24'>Other</a>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''>
+                                                        <span class='mdrop-sub'></span>
+                                                        <i class='mobile-drop-icon fa fa-chevron-right'></i>
+                                                        <a href='/women-shoes/c/86'>Shoes</a>
+                                                        <div class='back two'>
+                                                            <i class='fa fa-chevron-left'></i>
+                                                            <span class='text'>Women <span class='slash'>/</span> Shoes</span>
+                                                        </div>
+                                                        <ul class='second-mchild'>
+                                                            <li><a href='/women-shoes/c/86'>All Shoes</a></li>
+                                                            <li class=''><a href='/women-shoes-sneakers/c/36'>Sneakers</a>
+                                                            <li class=''><a href='/women-shoes-loafers/c/460'>Loafers</a>
+                                                            <li class=''><a href='/women-shoes-oxfords/c/461'>Oxfords</a>
+                                                            <li class=''><a href='/women-shoes-pumps/c/17'>Pumps</a>
+                                                            <li class=''><a href='/women-shoes-boots/c/16'>Boots</a>
+                                                            <li class=''><a href='/women-shoes-sandals/c/18'>Sandals</a>
+                                                            <li class=''><a href='/women-shoes-flats/c/110'>Flats</a>
+                                                            <li class=''><a href='/women-shoes-slippers/c/795'>Slippers</a>
+                                                            <li class=''><a href='/women-shoes-evening-and-bridal/c/205'>Evening & Bridal</a>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''>
+                                                        <span class='mdrop-sub'></span>
+                                                        <i class='mobile-drop-icon fa fa-chevron-right'></i>
+                                                        <a href='/women-bags/c/89'>Bags</a>
+                                                        <div class='back two'>
+                                                            <i class='fa fa-chevron-left'></i>
+                                                            <span class='text'>Women <span class='slash'>/</span> Bags</span>
+                                                        </div>
+                                                        <ul class='second-mchild'>
+                                                            <li><a href='/women-bags/c/89'>All Bags</a></li>
+                                                            <li class=''><a href='/women-bags-handbags/c/33'>Handbags</a>
+                                                            <li class=''><a href='/women-bags-backpacks/c/34'>Backpacks</a>
+                                                            <li class=''><a href='/women-bags-crossbody-bags/c/772'>Crossbody Bags</a>
+                                                            <li class=''><a href='/women-bags-wallets/c/35'>Wallets</a>
+                                                            <li class=''><a href='/women-bags-passport-cases/c/1016'>Passport Cases</a>
+                                                            <li class=''><a href='/women-bags-pouches/c/1017'>Pouches</a>
+                                                        </ul>
+                                                    </li>
+                                                    <li class=''>
+                                                        <span class='mdrop-sub'></span>
+                                                        <i class='mobile-drop-icon fa fa-chevron-right'></i>
+                                                        <a href='/women-tech-accessories/c/130'>Tech Accessories</a>
+                                                        <div class='back two'>
+                                                            <i class='fa fa-chevron-left'></i>
+                                                            <span class='text'>Women <span class='slash'>/</span> Tech Accessories</span>
+                                                        </div>
+                                                        <ul class='second-mchild'>
+                                                            <li><a href='/women-tech-accessories/c/130'>All Tech Accessories</a></li>
+                                                            <li class=''><a href='/women-tech-accessories-phone-cases/c/131'>Phone Cases</a>
+                                                            <li class=''><a href='/women-tech-accessories-smart-rings/c/765'>Smart Rings</a>
+                                                            <li class=''><a href='/women-tech-accessories-sticky-pads/c/766'>Sticky Pads</a>
+                                                            <li class=''><a href='/women-tech-accessories-others/c/134'>Other</a>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <ul class="mini-nav desktop two-large">
+                                                    <li class="first-child">
+                                                        <a href="javascript:void(0)">
+                                                            Clothing
+                                                            <span class="fc-line"></span>
+                                                        </a>
+                                                        <ul>
+                                                            <li class="second-child">
+                                                                <a href="#">Dresses</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Tops</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Sweatshirts & Hoodies</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Shirts & Blouses</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Sweaters</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Outerwear</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Skirts</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Pants</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Jeans</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Dresses</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Tops</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Sweatshirts & Hoodies</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Shirts & Blouses</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="first-child">
+                                                        <a href="#">
+                                                            Accessories
+                                                            <span class="fc-line"></span>
+                                                        </a>
+                                                        <ul>
+                                                            <li class="second-child">
+                                                                <a href="#">Dresses</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Tops</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Sweatshirts & Hoodies</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Shirts & Blouses</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="allnav">
+                                <span class="mdrop-sub"></span>
+                                <i class="mobile-drop-icon fa fa-chevron-right"></i>
+                                <a href="javascript:void(0)">Men</a>
+                                <div class="dropped">
+                                    <div class="drop-wrap">
+                                        <div class="fixed-width">
+                                            <div class="left">
+                                                <div class="back one">
+                                                    <i class="fa fa-chevron-left"></i>
+                                                    <span class="text">Men</span>
+                                                </div>
+                                                <ul class="mini-nav desktop two-large">
+                                                    <li class="first-child">
+                                                        <a href="#">
+                                                            Clothing
+                                                            <span class="fc-line"></span>
+                                                        </a>
+                                                        <ul>
+                                                            <li class="second-child">
+                                                                <a href="#">Dresses</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Tops</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Sweatshirts & Hoodies</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Shirts & Blouses</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Sweaters</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Outerwear</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Skirts</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Pants</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Jeans</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="first-child">
+                                                        <a href="#">
+                                                            Accessories
+                                                            <span class="fc-line"></span>
+                                                        </a>
+                                                        <ul>
+                                                            <li class="second-child">
+                                                                <a href="#">Dresses</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Tops</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Sweatshirts & Hoodies</a>
+                                                            </li>
+                                                            <li class="second-child">
+                                                                <a href="#">Shirts & Blouses</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="allnav">
+                                <span class="mdrop-sub"></span>
+                                <i class="mobile-drop-icon fa fa-chevron-right"></i>
+                                <a href="javascript:void(0)">Beauty</a>
+                            </li>
+                            <li class="allnav">
+                                <span class="mdrop-sub"></span>
+                                <i class="mobile-drop-icon fa fa-chevron-right"></i>
+                                <a href="javascript:void(0)">Kids</a>
+                            </li>
+                            <li class="allnav">
+                                <span class="mdrop-sub"></span>
+                                <i class="mobile-drop-icon fa fa-chevron-right"></i>
+                                <a href="javascript:void(0)">Lifestyle</a>
+                            </li>
+                            <li class="allnav">
+                                <span class="mdrop-sub"></span>
+                                <i class="mobile-drop-icon fa fa-chevron-right"></i>
+                                <a href="javascript:void(0)">Clearance</a>
+                            </li>
+                            <li class="allnav">
+                                <a href="javascript:void(0)" class="no-children">Brands</a>
+                            </li>
+                            <li class="allnav">
+                                <a href="javascript:void(0)" class="no-children">#MaNaCollection</a>
+                            </li>
+                        </ul>
+                        <div class="my-account-mobile">
+                            <button class="black header-signin gp-open" type="button">Sign In / Register</button>
+                            <button class="black gp-open open-country-select" type="button">
+                                <span class="text">Country: </span>
+                                <div class="selected-flag">
+                                    <div class="flag-icon-background flag-icon-kh"></div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- main-content start -->
+    <div class="main-content">
+        <div class="home">
+            <!-- banner -->
+            <div class="banner-1 fixed-width">
+                <div class="banner multi-link" id="banner_1">
+                    <div class="banner-item-wrap">
+                        <div class="link-wrap left-right-links">
+                            <a href="javascript:void(0)" class="banner-link left"></a>
+                            <a href="javascript:void(0)" class="banner-link right"></a>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="https://cdn-images.kooding.com/bannerItem/desktop/417/e38745910954c30d363d1cb22f81155f37f322c2.jpg">
+                            <img src="https://cdn-images.kooding.com/bannerItem/mobile/417/0da08ecb719e691287d2d92a2faccca71ee47022.jpg" alt="Fall Sale up to $45 off" title="Fall Sale up to $45 off">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <!-- category -->
+            <div class="category-banners fixed-width">
+                <div class="cb-item-wrap">
+                    <div class="cb-item" style="background:#CD3939;">
+                        <div class="image-overlay" style="opacity:0.70">
+                            <img src="images/fog.png">
+                        </div>
+                        <a href="javascript:void(0)" style="color:#FFFFFF">Women's Shirts & Blouses</a>
+                    </div>
+                </div>
+                <div class="cb-item-wrap">
+                    <div class="cb-item" style="background:#1B67C3;">
+                        <div class="image-overlay" style="opacity:0.60">
+                            <img src="images/fog.png">
+                        </div>
+                        <a href="javascript:void(0)" style="color:#FFFFFF">Women's Shirts & Blouses</a>
+                    </div>
+                </div>
+                <div class="cb-item-wrap">
+                    <div class="cb-item" style="background:#168171;">
+                        <div class="image-overlay" style="opacity:0.50">
+                            <img src="images/fog.png">
+                        </div>
+                        <a href="javascript:void(0)" style="color:#FFFFFF">Women's Shirts & Blouses</a>
+                    </div>
+                </div>
+                <div class="cb-item-wrap">
+                    <div class="cb-item" style="background:#B9B116;">
+                        <div class="image-overlay" style="opacity:0.60">
+                            <img src="images/fog.png">
+                        </div>
+                        <a href="javascript:void(0)" style="color:#FFFFFF">Women's Shirts & Blouses</a>
+                    </div>
+                </div>
+            </div>
+            <!-- sb-wrapper -->
+            <div class="sb-wrapper fixed-width">
+                <div class="sbs-wrapper">
+                    <div class="banner-2">
+                        <div class="banner" id="banner_2">
+                            <div class="banner-item-wrap">
+                                <div class="link-wrap">
+                                    <a href="javascript:void(0)" class="banner-link"></a>
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="https://cdn-images.kooding.com/bannerItem/desktop/381/2286794e581adde38ee61e18e693ae8bc74c5ec3.jpg">
+                                    <img src="https://cdn-images.kooding.com/bannerItem/mobile/381/ed728425aaa6ad5c8948d6bf4e5554324fd9d723.jpg" alt="Shirts for all Season" title="Shirts for all Season">
+                                </picture>
+                            </div>
+                            <div class="banner-shoptext">
+                                <a href="javascript:void(0)">
+                                    <div class="banner-title">Shirts for all Season</div>
+                                </a>
+                                <div class="banner-subtitle">Men's Shirts for all Season</div>
+                                <div class="banner-button">
+                                    <a href="javascript:void(0)" class="button">shop men's shirts</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-3">
+                        <div class="banner" id="banner_3">
+                            <div class="banner-item-wrap">
+                                <div class="link-wrap">
+                                    <a href="javascript:void(0)" class="banner-link"></a>
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="https://cdn-images.kooding.com/bannerItem/desktop/408/79bca43224793430e48fa672e224a19418f4597c.jpg">
+                                    <img src="https://cdn-images.kooding.com/bannerItem/mobile/408/1a12ee7b04305b5ec37fc2ae7b3f6383ea07255e.jpg" alt="Kpop Merchandise" title="Kpop Merchandise">
+                                </picture>
+                            </div>
+                            <div class="banner-shoptext">
+                                <a href="javascript:void(0)">
+                                    <div class="banner-title">Kpop Merchandise</div>
+                                </a>
+                                <div class="banner-subtitle">Find merchandise from your favorite artists!</div>
+                                <div class="banner-button">
+                                    <a href="javascript:void(0)" class="button">shop kpop merchandise</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-4">
+                        <div class="banner" id="banner_4">
+                            <div class="banner-item-wrap">
+                                <div class="link-wrap">
+                                    <a href="javascript:void(0)" class="banner-link"></a>
+                                </div>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="https://cdn-images.kooding.com/bannerItem/desktop/391/9d2093b8749bb50447b4423d22a0f35be03c8412.jpg">
+                                    <img src="https://cdn-images.kooding.com/bannerItem/mobile/391/b374697f81ce810c358e5f9ae98ec3a05de688ee.jpg" alt="Kpop Merchandise" title="Kpop Merchandise">
+                                </picture>
+                            </div>
+                            <div class="banner-shoptext">
+                                <a href="javascript:void(0)">
+                                    <div class="banner-title">Shop KOLCA</div>
+                                </a>
+                                <div class="banner-subtitle">Back to basic with retro sensibility</div>
+                                <div class="banner-button">
+                                    <a href="javascript:void(0)" class="button">Shop KOLCA</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sb-home-wrap start -->
+            <div class="sp-home-wrap" style="background:#C24242;">
+                <div class="suggested-products fixed-width" id="new-arrivals">
+                    <div class="sp-title">
+                        <div class="line"></div>
+                        <div class="text">NEW IN: 100+ items every day</div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="sp-products-wrapper">
+                        <div class="sp-arrows">
+                            <div class="arrow-wrap left disabled">
+                                <span class="line top"></span>
+                                <span class="line bottom"></span>
+                            </div>
+                            <div class="arrow-wrap right">
+                                <span class="line top"></span>
+                                <span class="line bottom"></span>
+                            </div>
+                        </div>
+                        <div class="sp-product-scroll">
+                            <div class="sp-ps-inner">
+                                <div class="sppl-wrap" style="display: none;"></div>
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220920-2/b31860cb14c2853329baa3f6fa1d2c877ff7d425.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220920-2/b31860cb14c2853329baa3f6fa1d2c877ff7d425.jpg">                                 
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="images/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220875-2/3a78c4346d64c3362dcb34a7438455092c8f1097.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220875-2/3a78c4346d64c3362dcb34a7438455092c8f1097.jpg">                                        
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/219992-2/dcf7c4f9adee58eb85abf4c7a7eea9376472dac3.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/219992-2/dcf7c4f9adee58eb85abf4c7a7eea9376472dac3.jpg">                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/221068-2/142d99fb674171dd047330705687fea56e302eb5.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/221068-2/142d99fb674171dd047330705687fea56e302eb5.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220644-2/a7ade03c9c18ff09ef8f041c2546dfb5a321675a.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220644-2/a7ade03c9c18ff09ef8f041c2546dfb5a321675a.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220089-2/ed7ed01e3292314b4c077962b650fb5701928340.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220089-2/ed7ed01e3292314b4c077962b650fb5701928340.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/221040-2/0bfc3acb65638449786498a18fcb7be5b9d6a169.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/221040-2/0bfc3acb65638449786498a18fcb7be5b9d6a169.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220745-2/cb5fc0d70226bd452a3e874d1979f1f2ef83ade4.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220745-2/cb5fc0d70226bd452a3e874d1979f1f2ef83ade4.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220605-2/6574ef0608c522e5b0d93bed23d50e8d03623e14.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220605-2/6574ef0608c522e5b0d93bed23d50e8d03623e14.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220631-2/b33ec78adc91d1e30b54c8a2821c9ec126be86d9.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220631-2/b33ec78adc91d1e30b54c8a2821c9ec126be86d9.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/220814-2/d9207242489a2b3d8279ed892ba0144263fad2e0.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/220814-2/d9207242489a2b3d8279ed892ba0144263fad2e0.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+
+                                <div class="sp-product visible" style="display: inline-block;">
+                                    <a href="javascript:void(0)">                                 
+                                        <div class="product-image">
+                                            <img data-src="https://cdn-images.kooding.com/productListingImage/221012-2/6d6c265939bace124b0c191e15b3cbff2953a28d.jpg" class=" lazyloaded" src="https://cdn-images.kooding.com/productListingImage/221012-2/6d6c265939bace124b0c191e15b3cbff2953a28d.jpg">
+                                        </div>                                 
+                                        <div class="product-text">                                     
+                                            <div class="product-title">Envy Look Volume Twisted Cardigan</div>                                 
+                                        </div>                                 
+                                        <div class="product-price ">                                     
+                                            <div class="sale-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">0</span>
+                                            </div>                                     
+                                            <div class="default-price">
+                                                <span class="currency lc">$</span>
+                                                <span class="number">31.99</span>
+                                            </div>
+                                            <div class="multicolor">
+                                                <span class="number">4</span>
+                                                <img src="/images/icons/colorwheel-2.png">
+                                            </div>
+                                        </div>                             
+                                    </a>                         
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class='gender-toggle'>
+                        <span class='text'>Women</span>
+                        <input type='checkbox' id='toggly' >
+                        <label for='toggly'><i style='background:#C24242;'></i></label>
+                        <span class='text'>Men</span>
+                    </div>
+                </div>
+            </div>
+            <!-- sb-home-wrap-end -->
+            <!-- newspaper-banners start -->
+            <div class="newspaper-banners fixed-width">
+                <div class="nb-wrap top">
+                    <div class="nb-item banner-5">
+                        <div class="banner" id="banner_5">
+                            <div class="banner-item-wrap">
+                                <div class="link-wrap">
+                                    <a href="javascript:void(0)" class="banner-link"></a>
+                                </div>
+                                <picture>
+                                    <source media="(max-width: 768px)" data-srcset="https://cdn-images.kooding.com/bannerItem/mobile/360/9546991c9c65f6e346142d0241168437dcb4f7d2.jpg" srcset="https://cdn-images.kooding.com/bannerItem/mobile/360/9546991c9c65f6e346142d0241168437dcb4f7d2.jpg">
+                                    <img class=" lazyloaded" data-src="https://cdn-images.kooding.com/bannerItem/desktop/360/bf1b615958cd6328c030365ba2846378d6893dc6.jpg" src="https://cdn-images.kooding.com/bannerItem/desktop/360/bf1b615958cd6328c030365ba2846378d6893dc6.jpg" alt="Blackhead Cleanser" title="Blackhead Cleanser">
+                                </picture>
+                            </div>
+                            <div class="banner-shoptext">
+                                <a href="javascript:void(0)">
+                                    <div class="banner-title">Blackhead Cleanser</div>
+                                </a>
+                                <div class="banner-subtitle">No more blackhead! All natural ingredients</div>
+                                <div class="banner-button">
+                                    <a href="https://www.kooding.com/search?idCategory=&amp;search=blackhead" target="_parent" class="button">shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nb-item banner-6">
+                        <div class="banner" id="banner_8">
+                            <div class="banner-item-wrap">
+                                <div class="link-wrap">
+                                    <a href="javascript:void(0)" class="banner-link"></a>
+                                </div>
+                                <picture>
+                                    <source media="(max-width: 768px)" data-srcset="https://cdn-images.kooding.com/bannerItem/mobile/412/34d6d04973d49d0cb157ece3356b8d6e0063c4ff.jpg" srcset="https://cdn-images.kooding.com/bannerItem/mobile/412/34d6d04973d49d0cb157ece3356b8d6e0063c4ff.jpg">
+                                    <img class=" lazyloaded" data-src="https://cdn-images.kooding.com/bannerItem/desktop/360/bf1b615958cd6328c030365ba2846378d6893dc6.jpg" src="https://cdn-images.kooding.com/bannerItem/desktop/412/6672ac7469214c98c28f0d4aa727a39772fbb40f.jpg" alt="Blackhead Cleanser" title="Blackhead Cleanser">
+                                </picture>
+                            </div>
+                            <div class="banner-shoptext">
+                                <a href="javascript:void(0)">
+                                    <div class="banner-title">Blackhead Cleanser</div>
+                                </a>
+                                <div class="banner-subtitle">No more blackhead! All natural ingredients</div>
+                                <div class="banner-button">
+                                    <a href="https://www.kooding.com/search?idCategory=&amp;search=blackhead" target="_parent" class="button">shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nb-wrap bottom">
+                    <div class="nb-item banner-7">
+                        <div class="banner" id="banner_9">
+                            <div class="banner-item-wrap">
+                                <div class="link-wrap">
+                                    <a href="javascript:void(0)" class="banner-link"></a>
+                                </div>
+                                <picture>
+                                    <source media="(max-width: 768px)" data-srcset="https://cdn-images.kooding.com/bannerItem/mobile/376/92b93044b141950a5c6e15e426cefa69cd4d492b.jpg" srcset="https://cdn-images.kooding.com/bannerItem/mobile/376/92b93044b141950a5c6e15e426cefa69cd4d492b.jpg">
+                                    <img class=" ls-is-cached lazyloaded" data-src="https://cdn-images.kooding.com/bannerItem/desktop/376/c917521fdfa26be7aa339ede119e8b14cf2bafd7.jpg" src="https://cdn-images.kooding.com/bannerItem/desktop/376/c917521fdfa26be7aa339ede119e8b14cf2bafd7.jpg" alt="Hanbok in Everyday Life" title="Hanbok in Everyday Life">
+                                </picture>
+                            </div>
+                            <div class="banner-shoptext">
+                                <a href="javascript:void(0)">
+                                    <div class="banner-title">Hanbok in Everyday Life</div>
+                                </a>
+                                <div class="banner-subtitle">Tradition meets modern lifestyle</div>
+                                <div class="banner-button">
+                                    <a href="https://www.kooding.com/search?idCategory=&amp;search=blackhead" target="_parent" class="button">shop modern hanbok</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nb-item phantom"></div>
+                </div>
+            </div>
+            <!-- newspaper-banners end -->
+        </div>
+    </div>
+    <!-- main-content end -->
+    <!-- back to top start -->
+    <div class="back-to-top">
+        <div class="btt-button">
+            <i class="fa fa-chevron-up"></i>
+        </div>
+    </div>
+    <!-- back to top end -->
+</body>
+</html>
