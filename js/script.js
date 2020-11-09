@@ -412,43 +412,43 @@ $(document).ready(function() {
     });
 
     function fullLoaderHeight() {
-        let fslCS = $(window).scrollTop();
+        var fslCS = $(window).scrollTop();
         if (isMobileNav) {
             if (fslCS == 0) {
-                let fslTop = 94;
+                var fslTop = 94;
             }
             else if (fslCS > 0 && fslCS < 40) {
-                let fslTop = 94 - fslCS;
+                var fslTop = 94 - fslCS;
             }
             else {
-                let fslTop = 54;
+                var fslTop = 54;
             }
         }
         else {
             if ($('body').hasClass('checkout-body')) {
                 if (fslCS == 0) {
-                    let fslTop = 60;
+                    var fslTop = 60;
                 }
                 else if (fslCS > 0 && fslCS < 60) {
-                    let fslTop = 60 - fslCS;
+                    var fslTop = 60 - fslCS;
                 }
                 else {
-                    let fslTop = 0;
+                    var fslTop = 0;
                 }
             }
             else {
                 if (fslCS == 0) {
-                    let fslTop = 151;
+                    var fslTop = 151;
                 }
                 else if (fslCS > 0 && fslCS < 151) {
-                    let fslTop = 151 - fslCS;
+                    var fslTop = 151 - fslCS;
                 }
                 else {
-                    let fslTop = 0;
+                    var fslTop = 0;
                 }
             }
         }
-        let isFullMobile = $('section.isfullmobile-identifier').css('display') != 'none';
+        var isFullMobile = $('section.isfullmobile-identifier').css('display') != 'none';
         if (isFullMobile) {
             $('#notification').css('margin-top', fslTop+'px');
         }
@@ -516,5 +516,9 @@ $(document).ready(function() {
             });
         }
     });
-        
+
+    $('.about-text').on('click', function(){
+        $(this).toggleClass('active');
+        $('.expand-icon').toggle();
+    });
 })

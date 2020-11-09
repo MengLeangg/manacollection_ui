@@ -307,10 +307,13 @@ img[data-src], img[data-srcset] {
     padding: 0 5px;
 }
 .sp-home-wrap .gender-toggle input {
-    display: none;
+    /* display: none; */
+    height: 0;
+	width: 0;
+	visibility: hidden;
 }
 .sp-home-wrap .gender-toggle label {
-    display: inline-block;
+    /* display: inline-block;
     width: 46px;
     height: 24px;
     cursor: pointer;
@@ -323,9 +326,38 @@ img[data-src], img[data-srcset] {
     position: relative;
     top: 1px;
     vertical-align: top;
-    background-color: #fff;
+    background-color: #fff; */
+    cursor: pointer;
+	text-indent: -9999px;
+	width: 200px;
+	height: 100px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
 }
-.sp-home-wrap .gender-toggle label i {
+.sp-home-wrap .gender-toggle label:after{
+    content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 90px;
+	height: 90px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+.sp-home-wrap .gender-toggle input,.sp-home-wrap .gender-toggle label{
+    background: #bada55;
+}
+.sp-home-wrap .gender-toggle input,.sp-home-wrap .gender-toggle label:after{
+    left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+.sp-home-wrap .gender-toggle label:active:after{
+    width: 130px;
+}
+/* .sp-home-wrap .gender-toggle label i {
     height: 18px;
     width: 18px;
     margin-top: 3px;
@@ -339,7 +371,7 @@ img[data-src], img[data-srcset] {
     -webkit-transition: all .15s ease-in-out;
     pointer-events: none;
     box-shadow: 0 0 0 0 rgba(0,0,0,0);
-}
+} */
 
 @media only screen and (max-width: 1065px){
     .suggested-products .sp-products-wrapper {

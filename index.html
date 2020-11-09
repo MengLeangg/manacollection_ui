@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MaNaCollection</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/OverlayScrollbars.min.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/promotion-bar.css">
@@ -14,15 +15,19 @@
     <link rel="stylesheet" href="css/sb-wrapper.css">
     <link rel="stylesheet" href="css/sb-home-wrap.css">
     <link rel="stylesheet" href="css/newspaper-banners.css">
+    <link rel="stylesheet" href="css/about-text.css">
     <link rel="stylesheet" href="css/ig-feed-wrap.css">
     <link rel="stylesheet" href="css/footer.css">
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jquery.hoverIntent.min.js"></script>
-    <script src="js/swiper.min.js"></script>
-    <script src="js/jquery.overlayScrollbars.min.js"></script>
-    <script src="js/navbar.js"></script>
+    <script defer src="js/jquery-3.5.1.min.js"></script>
+    <script defer src="js/jquery-ui.min.js"></script>
+    <script defer src="js/jquery-ui-touch.min.js"></script>
+    <script defer src="js/jquery.hoverIntent.min.js"></script>
+    <script defer src="js/swiper.min.js"></script>
+    <script defer src="js/jquery.overlayScrollbars.min.js"></script>
+    <script defer src="js/widget.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 <body>
     <section class="isretina-identifier"></section>
@@ -950,7 +955,7 @@
                     </div>
                     <div class='gender-toggle'>
                         <span class='text'>Women</span>
-                        <input type='checkbox' id='toggly' >
+                        <input type="checkbox" id="toggly" >
                         <label for='toggly'><i style='background:#C24242;'></i></label>
                         <span class='text'>Men</span>
                     </div>
@@ -1359,13 +1364,30 @@
                     </div>
                     <div class='gender-toggle'>
                         <span class='text'>Women</span>
-                        <input type='checkbox' id='toggly' >
-                        <label for='toggly'><i style='background:#C7822F;'></i></label>
+                        <!-- <input type='checkbox' id="togglytwo" checked >
+                        <label for="togglytwo"><i style='background:#C7822F;'></i></label> -->
+                        <input type="checkbox" id="switch" />
+                        <label for="switch">Toggle</label>
                         <span class='text'>Men</span>
                     </div>
                 </div>
             </div>
             <!-- sb-home-wrap-end -->
+            <!-- about-text start -->
+            <div class="about-text fixed-width">
+                <h3 class="title">Connecting Korean Fashion and K-Beauty To You</h3>
+                <div class="expand-icon">+</div>
+                <div class="expand-icon collapse">-</div>
+                <div class="background-overlay"></div>
+                <div class="site-intro">
+                    <p>Welcome to KOODING.com, the leading online global marketplace. Our goal is to not only connect people around the globe through their love of Korean style, but also to provide instant access to the newest <a href="https://www.kooding.com/women/c/1">Korean women’s fashion</a>, <a href="https://www.kooding.com/men/c/2">Korean men’s fashion</a>, and <a href="https://www.kooding.com/beauty/c/218">Korean beauty</a> products and brands across the world at the lowest cost and with zero hassle worldwide shipping. Above all, we strive to provide the KOODING community with high-end products found at Korean stores at the most affordable prices.</p>
+                    <p>KOODING provides the best in Asian clothing online and is the go-to shop for anything related to Korean fashion. From street fashion to high-end designer clothes, we make Korean shopping online easier than ever. Here, you can find everything from comfortable hoodies and sweatshirts, adorable dresses, coats and cardigans that are stylish and warm, and your new favorite pair of jeans and pants. We carry authentic Korean clothing brands like <a href="https://www.kooding.com/chuu/b/90">Chuu</a>, <a href="https://www.kooding.com/naning9/b/255">NANING9</a>, <a href="https://www.kooding.com/cherrykoko/b/11">Cherrykoko</a>, <a href="https://www.kooding.com/basic-house/b/253">BASIC HOUSE</a>, <a href="https://www.kooding.com/mind-bridge/b/252">MIND BRIDGE</a>, <a href="https://www.kooding.com/open-the-door/b/111">OPEN THE DOOR</a>, <a href="https://www.kooding.com/redhomme/b/98">REDHOMME</a>, and so much more. No matter what your preferred style, you can definitely find your dream outfit with these clothes from Korea.</p>
+                    <p>KOODING is more than just a Korean fashion online shop; in fact, we go beyond Korean style clothing and also provide the absolute best in <a href="https://www.kooding.com/beauty/c/218">K-beauty</a> products, <a href="https://www.kooding.com/music/c/986">K-pop albums</a>, <a href="https://www.kooding.com/women-accessories-jewelry/c/21">jewelry</a>, and <a href="https://www.kooding.com/women-accessories/c/92">accessories</a> that complete and complement every facet of your lifestyle.</p>
+                    <p>Our <a href="https://www.kooding.com/beauty/c/218">Korean cosmetics</a>, <a href="https://www.kooding.com/beauty-makeup/c/220">makeup</a>, and <a href="https://www.kooding.com/beauty-skincare-routine/c/219">skincare</a> products let you put your best face forward. Brands like <a href="https://www.kooding.com/snp/b/250">SNP</a>, <a href="https://www.kooding.com/ariul/b/136">Ariul</a>, <a href="https://www.kooding.com/rire/b/215">RiRe</a>, <a href="https://www.kooding.com/evercell/b/254">Evercell by Chaum</a>, <a href="https://www.kooding.com/xyz/b/166">XYZ</a>, and <a href="https://www.kooding.com/million-red/b/256">MILLION RED</a> house innovative formulas in makeup and skin care using the best of the best in Korean beauty secrets. Here, you can shop <a href="https://www.kooding.com/beauty-skincare-routine-masks-sheet-masks/c/239">face sheet masks</a>, <a href="https://www.kooding.com/beauty-skincare-routine-cleansers/c/225">cleansers</a>, <a href="https://www.kooding.com/beauty-skincare-routine-toners/c/226">toners</a>, <a href="https://www.kooding.com/beauty-skincare-routine-serums-ampoules/c/229">serums</a>, <a href="https://www.kooding.com/beauty-skincare-routine-moisturizers-creams/c/227">face cream</a>, Korean style <a href="https://www.kooding.com/beauty-makeup-lips/c/234">lip tints</a>, <a href="https://www.kooding.com/beauty-makeup-face-cushion/c/912">cushion pact</a>, and everything else you need to achieve a natural makeup look, complete your <a href="https://www.kooding.com/beauty-skincare-routine/c/219">10-step skincare routine</a>, browse by your <a href="https://www.kooding.com/beauty-skin-type/c/899">skin type</a>, or treat your <a href="https://www.kooding.com/beauty-skin-concern-goal/c/785">skin concern</a>.</p>
+                    <p>Come find out where your life takes you at KOODING! Feel free to browse through our website and check out the latest and greatest Korean fashion styles from your new favorite online fashion shop. With the ability to serve over 90 countries, we guarantee you'll have an easygoing shopping experience.</p>
+                </div>
+            </div>
+            <!-- about-text end -->
             <!-- ig-feed-wrap start -->
             <div class="ig-feed-wrap" style="background: #D45C42;">
                 <div class="ig-feed-innerwrap">
