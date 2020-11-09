@@ -92,6 +92,14 @@ body button{
     -ms-touch-action: manipulation;
 }
 
+/* header */
+body.scrollable.mobile-menu{
+    position: fixed;
+}
+body.scrollable {
+    overflow: hidden;
+}
+
 /* main-content */
 body.index-body .main-content {
     padding-bottom: 0;
@@ -103,6 +111,7 @@ body.index-body .main-content {
     min-height: -moz-calc(100% - 524px);
     min-height: calc(100% - 524px);
 }
+
 
 /* back to top */
 .back-to-top {
@@ -193,5 +202,11 @@ input, .input {
         width: 42px;
         height: 42px;
         box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 13px;
     }
 }
