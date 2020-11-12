@@ -500,4 +500,5 @@ $(document).ready(function() {
         $(this).toggleClass('active');
         $('.expand-icon').toggle();
     });
+
 })

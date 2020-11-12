@@ -369,6 +369,25 @@ img[data-srcset] {
     display: none;
 }
 
+.sp-home-wrap .gender-toggle input+.sp-home-wrap .gender-toggle label {
+    background: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.sp-home-wrap .gender-toggle input+.sp-home-wrap .gender-toggle label:after {
+    border-radius: 50%;
+    background: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.sp-home-wrap .gender-toggle input:checked+.sp-home-wrap .gender-toggle label {
+    background: #9FD6AE;
+}
+
 .sp-home-wrap .gender-toggle label {
     display: inline-block;
     width: 46px;
@@ -400,6 +419,10 @@ img[data-srcset] {
     -webkit-transition: all .15s ease-in-out;
     pointer-events: none;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.sp-home-wrap .gender-toggle input:checked+label>i {
+    margin-left: 24px;
 }
 
 @media only screen and (max-width: 1065px) {
