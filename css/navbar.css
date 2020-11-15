@@ -54,12 +54,6 @@
     flex-wrap: nowrap;
 }
 
-.fixed-width {
-    width: 1400px;
-    margin: 0 auto;
-    position: relative;
-}
-
 .header .main-heading .logo {
     display: inline-block;
     width: 200px;
@@ -848,12 +842,6 @@ body .global-x .line.two {
 /* Responsive size */
 
 @media only screen and (max-width: 1450px) {
-    .fixed-width,
-    body.checkout-body .fixed-width {
-        width: 100%;
-        padding: 0 20px !important;
-        box-sizing: border-box;
-    }
     .header .sub-nav .sitenav-wrap>ul {
         width: 100% !important;
     }
