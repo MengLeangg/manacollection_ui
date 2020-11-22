@@ -216,6 +216,388 @@
     display: none;
 }
 
+.browse-nav {
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: left;
+    min-height: 26px;
+}
+
+.browse-nav .bn-wrap .subnav-trail {
+    min-height: 26px;
+    font-size: 13px;
+    padding: 0;
+}
+
+.browse-nav .bn-wrap .subnav-trail a {
+    display: inline-block;
+    color: #666;
+}
+
+.browse-nav .bn-wrap .subnav-trail .divider {
+    cursor: default;
+    font-family: 'open sans';
+    position: relative;
+    top: 0;
+    margin: 0 11px 0 12px;
+    color: #666;
+}
+
+.browse-nav .bn-wrap .subnav-trail .divider:last-child {
+    display: none;
+}
+
+.page-filters-wrap {
+    position: relative;
+    top: -33px;
+}
+
+.page-filters {
+    padding: 0;
+    display: inline-block;
+    margin: 0;
+    cursor: default;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+
+.page-filters .sort-filter-wrapper {
+    display: block;
+    position: relative;
+    padding: 3px 0 3px 5px;
+    margin: -39px 0 7px;
+    right: 0;
+    text-align: right;
+    font-size: 13px;
+}
+
+.page-filters .sort-filter-wrapper .filter-label {
+    cursor: pointer;
+    display: inline-block;
+    color: #777;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.page-filters .sort-filter-wrapper .filter-label i {
+    font-size: 11px;
+    margin-left: 4px;
+    display: none;
+}
+
+.page-filters .sort-filter-wrapper .filter-label i.active {
+    display: inline-block;
+}
+
+.page-filters .sort-filter-wrapper .filter-container {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.13), 0 4px 5px 0 rgba(0, 0, 0, 0.09), 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid #d6d6d6;
+    margin-top: 0;
+    padding: 10px 0;
+    z-index: 8;
+    min-width: 180px;
+    box-sizing: border-box;
+    right: 0;
+}
+
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper {
+    max-height: 325px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper ul.sort-drop,
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper ul.category-drop {
+    margin: 0;
+}
+
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper ul.sort-drop li input {
+    display: none;
+}
+
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper ul.sort-drop li i,
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper ul.category-drop li i {
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 13px;
+    font-size: 11px;
+    display: none;
+}
+
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper ul.sort-drop li a,
+.page-filters .sort-filter-wrapper .filter-container .filter-options-wrapper ul.category-drop li a {
+    display: block;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0 16px;
+    line-height: 32px;
+    font-size: 13px;
+    color: #555;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Pagination Start */
+
+.page-filters ul.pages {
+    display: inline-block;
+    position: relative;
+    -moz-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    opacity: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.page-filters ul.pages li.arrow.disabled {
+    pointer-events: none;
+}
+
+.page-filters ul.pages li.left.arrow {
+    padding: 0 5px;
+}
+
+.page-filters ul.pages li.arrow {
+    cursor: pointer;
+}
+
+.page-filters ul.pages li {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.page-filters ul.pages li.arrow.disabled i {
+    color: #e3e3e3;
+}
+
+.page-filters ul.pages li.arrow i {
+    font-size: 11px;
+    position: relative;
+    top: -1px;
+    color: #444;
+}
+
+.page-filters ul.pages li.page-nav span {
+    cursor: pointer;
+    margin: 0 7px;
+    padding: 0 5px;
+}
+
+.page-filters ul.pages li.page-nav span.current {
+    cursor: default;
+    pointer-events: none;
+    background: #e3e3e3;
+    border-radius: 100%;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    position: relative;
+    top: 0;
+    color: #444;
+    margin: 0 4px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.page-filters ul.pages li.page-nav span.eclipse {
+    cursor: default;
+    display: none;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+}
+
+.page-filters ul.pages li.page-nav span.eclipse.active {
+    display: inline;
+}
+
+
+/* Pagination End */
+
+
+/* Filter Mobile Start */
+
+.product-browse .products .products-display .mobile-bwrap {
+    display: none;
+    margin: 0;
+}
+
+.product-browse .products .products-display .mobile-buttons {
+    display: none;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-filters {
+    margin-right: 2%;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-sort {
+    margin-left: 2%;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-sort,
+.product-browse .products .products-display .mobile-buttons .mb-filters {
+    width: 48%;
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    padding: 0;
+    height: 46px;
+    line-height: 46px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #444;
+    font-family: 'raleway';
+    font-weight: 500;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-categories,
+.product-browse .products .products-display .mobile-buttons .mb-filters {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    padding: 0;
+    height: 46px;
+    line-height: 46px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: #444;
+    font-family: 'raleway';
+    font-weight: 500;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-sort img {
+    top: 3px;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-sort img,
+.product-browse .products .products-display .mobile-buttons .mb-filters img {
+    display: inline-block;
+    width: 25px;
+    position: relative;
+    top: 5px;
+    margin-right: 10px;
+}
+
+
+/* Filter Mobile End */
+
+
+/* Sortby Dropdown For Mobile Start */
+
+.product-browse .products .products-display .mobile-buttons .mb-sort .filter-container {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    margin-top: -2px;
+    padding: 13px 0;
+    z-index: 9999;
+    width: 100%;
+    right: -1px;
+    cursor: default;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-sort .filter-container .filter-options-wrapper ul.sort-drop,
+.product-browse .products .products-display .mobile-buttons .mb-sort .filter-container .filter-options-wrapper ul.category-drop {
+    margin: 0;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-sort .filter-container .filter-options-wrapper ul.sort-drop li input {
+    display: none;
+}
+
+.product-browse .products .products-display .mobile-buttons .mb-sort .filter-container .filter-options-wrapper ul.sort-drop li a,
+.product-browse .products .products-display .mobile-buttons .mb-sort .filter-container .filter-options-wrapper ul.category-drop li a {
+    font-family: 'open sans';
+    display: block;
+    color: #444;
+    padding: 6px 15px 6px 10px;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 13px;
+}
+
+
+/* Sortby Dropdown For Mobile End */
+
+
+/* Filter Dropdown For Mobile Start */
+
+.product-browse .products .products-display .display-nav-wrapper {
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.product-browse .products .products-display .display-nav-wrapper .close.mobile {
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    display: table;
+    padding: 0;
+    line-height: 1;
+    font-size: 20px;
+    background: none;
+    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: none;
+}
+
+
+/* Filter Dropdown For Mobile End */
+
 @media only screen and (max-width: 768px) {
     .product-browse .products .products-display .category-desc-mini.desktop {
         display: none !important;
@@ -226,6 +608,9 @@
         text-align: left;
         margin: 0 auto 0;
         padding: 8px 0 2px;
+    }
+    .browse-nav {
+        display: none;
     }
     .browse-nav.mobile {
         display: block;
@@ -250,6 +635,32 @@
     }
     .product-browse .products .products-display {
         text-align: left;
+    }
+    .product-browse .products .products-display .category-desc-mini .text {
+        text-align: left;
+        padding-left: 1px;
+        box-sizing: border-box;
+    }
+    .product-browse .products .products-display .mobile-bwrap {
+        display: block;
+        text-align: center;
+    }
+    .product-browse .products .products-display .mobile-buttons {
+        display: block;
+        padding: 10px 0 0;
+        box-sizing: border-box;
+    }
+    .product-browse .products .products-display .display-nav-wrapper {
+        display: none;
+        position: relative;
+        background: #fff;
+        z-index: 9;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .product-browse .products .products-display .display-nav-wrapper .close.mobile {
+        display: none;
     }
 }
 
